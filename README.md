@@ -8,7 +8,7 @@
 *   **过期时间选项：** 增加了短链接过期时间选项，更加灵活。
 
 ## 演示
-[https://url.wangwangit.com/](https://url.wangwangit.com/)
+[https://url.lovesw.top/](https://url.lovesw.top/)
 
 ## 使用 Cloudflare Pages 部署
 
@@ -46,13 +46,13 @@ CREATE TABLE IF NOT EXISTS logs (
 短链接生成
 ```
 # POST /create
-curl -X POST -H "Content-Type: application/json" -d '{"url":"https://url.wangwangit.com"}' https://url.wangwangit.com/create
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://url.lovesw.top"}' https://url.lovesw.top/create
 
 # 指定 slug
-curl -X POST -H "Content-Type: application/json" -d '{"url":"https://url.wangwangit.com","slug":"example"}' https://url.wangwangit.com/create
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://url.lovesw.top","slug":"example"}' https://url.lovesw.top/create
 
 # 设置过期时间
-curl -X POST -H "Content-Type: application/json" -d '{"url":"https://url.wangwangit.com", "expiry": "5m"}' https://url.wangwangit.com/create
+curl -X POST -H "Content-Type: application/json" -d '{"url":"https://url.lovesw.top", "expiry": "5m"}' https://url.lovesw.top/create
 
 # 响应示例
 {
